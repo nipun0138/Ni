@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Speed Optimization for SEO | Jannatul</title>
+  <meta name="description" content="Complete guide to page speed optimization covering Core Web Vitals, image optimization, caching, CDN, and technical improvements to boost SEO rankings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../styles.css">
+  <script type="module" src="../script.js" defer></script>
+</head>
+<body class="site-shell">
+  <div class="page-aura page-aura-left"></div>
+  <div class="page-aura page-aura-right"></div>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand-mark" href="../index.html" aria-label="Jannatul home">Jannatul</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-label">Menu</span>
+      </button>
+      <nav class="site-navigation" id="site-navigation" aria-label="Primary navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link" href="../index.html">Home</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="../blog/index.html">Blog</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="../about.html">About</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-primary" href="https://wa.me/8801745912252" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="button button-secondary" href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="blog-post-layout">
+      <div class="container blog-post-header">
+        <div class="blog-post-meta">
+          <span class="blog-kicker">Page Speed SEO</span>
+          <h1 class="blog-title">Page Speed Optimization for SEO: Complete Technical Guide</h1>
+          <p class="blog-excerpt">Master page speed optimization with comprehensive strategies for Core Web Vitals, image optimization, caching, server optimization, and performance improvements that boost SEO rankings and user experience.</p>
+          <div class="blog-post-info">
+            <span>Published: January 2024</span>
+            <span>Reading time: 14 minutes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container blog-post-content">
+        <section class="blog-section">
+          <h2>Why Page Speed Matters for SEO</h2>
+          <p>Page speed is a confirmed Google ranking factor. Faster sites rank better than slower sites all else being equal. Beyond rankings, page speed dramatically impacts user experience—users bounce from slow pages, which further hurts your rankings. A faster site also increases conversion rates, meaning your visitors are more likely to buy, sign up, or take desired actions. Page speed optimization improves SEO, user experience, and business metrics simultaneously.</p>
+          <p>Core Web Vitals are three specific metrics Google uses to evaluate page speed and user experience: Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS). Pages that fail Core Web Vitals may experience ranking penalties. Google shows warning labels for pages with poor Core Web Vitals in search results, further reducing clicks. Optimizing these metrics is essential for modern SEO.</p>
+          <p>Mobile users are particularly sensitive to slow page speeds due to slower network connections. Since Google uses mobile-first indexing, optimizing mobile page speed is as important as desktop speed. Many users abandon slow mobile sites immediately, increasing bounce rates and damaging rankings. Focus on creating a fast experience for both desktop and mobile users.</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Image Optimization: The Biggest Speed Opportunity</h2>
+          <p>Images are typically the largest components of web pages and account for most file size. Optimizing images is the single most impactful speed improvement most sites can make. Before uploading images, compress them using tools like TinyPNG, ImageOptim, or Squoosh. Modern formats like WebP provide better compression than traditional JPG/PNG while maintaining quality. Serve WebP images to supported browsers and fall back to JPG for older browsers.</p>
+          <p>Implement responsive images using srcset so different devices download appropriately sized images. Mobile devices shouldn't download full-resolution desktop images—serve smaller versions to reduce file size and improve load times. Use lazy loading so images below the fold don't load until needed, improving initial page load time. Most modern frameworks support lazy loading natively; older sites can use Intersection Observer API or libraries like Lazysizes.</p>
+          <p>Optimize image dimensions—don't upload oversized images and let CSS scale them down. The image should be as close to actual display size as possible. A 4000px image displayed at 400px wastes bandwidth. Use background images sparingly, as they can impact page load. Combine multiple images into sprites when appropriate to reduce HTTP requests.</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Implementing Caching and CDN Strategies</h2>
+          <p>Browser caching stores resources locally on users' devices so repeat visitors don't re-download unchanged files. Configure your server to send cache headers telling browsers how long to cache different resources. Static resources like CSS, JavaScript, and images can be cached for long periods (months or years). Dynamic content like HTML pages should have shorter cache periods (hours or days) so users see updated content.</p>
+          <p>Server-side caching reduces database queries and speeds up dynamic content generation. Implement caching layers like Redis or Memcached to cache database queries and computed results. This dramatically reduces server load and improves response times for dynamic pages. Many CMS platforms provide caching plugins that implement these strategies without requiring coding.</p>
+          <p>Content Delivery Networks (CDNs) distribute your content across geographically distributed servers, serving users from servers nearest to them. CDNs dramatically improve load times for users far from your origin server. Popular CDNs include Cloudflare, Akamai, and AWS CloudFront. CDNs are relatively inexpensive and provide significant performance improvements with minimal configuration.</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Optimizing Largest Contentful Paint (LCP)</h2>
+          <p>Largest Contentful Paint measures when the largest visual element becomes visible. Google's threshold is 2.5 seconds—pages loading LCP faster than 2.5 seconds pass this metric. Optimize LCP by optimizing your largest image or text block. Make sure your most important content is prioritized and loads quickly. Avoid layout shifts while content loads, which increase CLS and frustrate users.</p>
+          <p>Remove render-blocking resources like CSS and JavaScript that prevent the page from displaying. Inline critical CSS needed for above-the-fold content, defer non-critical CSS. Use async or defer attributes on JavaScript tags to prevent them from blocking page rendering. Minimize unused CSS and JavaScript, removing code you don't need. Code splitting breaks large JavaScript bundles into smaller chunks that load only when needed.</p>
+          <p>Optimize web fonts, which often slow LCP significantly. Use system fonts when appropriate, as they load immediately. If using web fonts, use font-display: swap to show fallback fonts immediately while custom fonts load, avoiding invisible text. Preload critical fonts using font-display and resource hints. Consider limiting the number of font weights and styles you use.</p>
+        </section>
+
+        <section class="blog-section faq-section">
+          <h2>Frequently Asked Questions</h2>
+          
+          <div class="faq-item">
+            <h3>What's a good page load time?</h3>
+            <p>Aim for pages that load in under 3 seconds on typical connections. Mobile pages should load under 3-5 seconds given slower mobile networks. Faster is always better—studies show conversion rate increases for every 0.1 seconds of speed improvement. Test your speed with Google PageSpeed Insights and implement recommendations.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How do I test my Core Web Vitals?</h3>
+            <p>Use Google PageSpeed Insights to check your Core Web Vitals. Also check the Web Vitals report in Google Search Console for real user data. Tools like WebPageTest and Lighthouse provide additional performance metrics and recommendations. Monitor Core Web Vitals over time to track improvements from optimization efforts.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Should I use a CDN?</h3>
+            <p>Yes, CDNs provide significant benefits even for small sites. They're inexpensive and easy to set up through services like Cloudflare. CDNs improve load times for users geographically distant from your server and reduce server load. Most sites benefit from CDN implementation.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How important is mobile page speed?</h3>
+            <p>Very important. Google uses mobile-first indexing, prioritizing mobile site speed. Mobile users often have slower connections than desktop users, making optimization even more critical. Mobile page speed affects rankings, user experience, and conversion rates. Prioritize mobile optimization.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What's the biggest speed improvement I can make?</h3>
+            <p>Image optimization typically provides the most dramatic improvements. Most sites can improve load times 20-50% through aggressive image compression and responsive images alone. Server response time and render-blocking resources are the next biggest opportunities.</p>
+          </div>
+        </section>
+
+        <section class="blog-section">
+          <h2>Conclusion</h2>
+          <p>Page speed optimization improves SEO rankings, user experience, and conversion rates. Focus on optimizing images, implementing caching, and improving Core Web Vitals. Use Google PageSpeed Insights to identify specific optimization opportunities and monitor your progress over time. Speed optimization is an ongoing process, but even small improvements compound into significant ranking and revenue gains.</p>
+        </section>
+
+        <div class="blog-post-footer">
+          <a class="button button-primary" href="../index.html">Back to Home</a>
+          <a class="button button-secondary" href="../contact.html">Contact Us</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column footer-intro">
+        <a class="brand-mark footer-brand" href="../index.html">Jannatul</a>
+        <p>Personal SEO expert support for businesses that want search growth with stronger strategy.</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-title">Quick links</h3>
+        <ul class="footer-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

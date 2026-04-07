@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Web Vitals Guide: Improve User Experience and Rankings | Jannatul</title>
+  <meta name="description" content="Understand LCP, INP, and CLS, and learn how to improve performance signals that matter for search.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../styles.css">
+  <script type="module" src="../script.js" defer></script>
+</head>
+<body class="site-shell">
+  <div class="page-aura page-aura-left"></div>
+  <div class="page-aura page-aura-right"></div>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand-mark" href="../index.html" aria-label="Jannatul home">Jannatul</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-label">Menu</span>
+      </button>
+      <nav class="site-navigation" id="site-navigation" aria-label="Primary navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link" href="../index.html">Home</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="../blog/index.html">Blog</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="../about.html">About</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-primary" href="https://wa.me/8801745912252" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="button button-secondary" href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="blog-post-layout">
+      <div class="container blog-post-header">
+        <div class="blog-post-meta">
+          <span class="blog-kicker">Technical SEO</span>
+          <h1 class="blog-title">Core Web Vitals Guide: Improve User Experience and Rankings</h1>
+          <p class="blog-excerpt">Optimize page experience with measurable fixes that support faster, smoother browsing.</p>
+          <div class="blog-post-info">
+            <span>Published: June 2024</span>
+            <span>Reading time: 8 minutes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container blog-post-content">
+        <section class="blog-section">
+          <h2>What Are Core Web Vitals</h2>
+          <p>Core Web Vitals are three performance metrics that measure key aspects of user experience: loading performance, interactivity, and visual stability. Google uses these metrics as ranking signals, making them important for both SEO and conversion rates.</p>
+          <p>The three Core Web Vitals are: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS).</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Largest Contentful Paint (LCP)</h2>
+          <p>LCP measures how quickly the largest piece of content becomes visible on the page. A good LCP is 2.5 seconds or less. To improve LCP:</p>
+          <ul style="color: var(--text-secondary); margin: 1rem 0;">
+            <li>Optimize images and video content</li>
+            <li>Minimize CSS and JavaScript</li>
+            <li>Use a content delivery network (CDN)</li>
+            <li>Enable browser caching</li>
+            <li>Upgrade server resources</li>
+            <li>Defer non-critical resources</li>
+          </ul>
+        </section>
+
+        <section class="blog-section">
+          <h2>Interaction to Next Paint (INP)</h2>
+          <p>INP measures responsiveness by tracking the time between a user interaction (like a click) and the next visual update. Good INP is 200ms or less. Improve INP by:</p>
+          <ul style="color: var(--text-secondary); margin: 1rem 0;">
+            <li>Reducing JavaScript execution time</li>
+            <li>Breaking up long tasks</li>
+            <li>Optimizing event handlers</li>
+            <li>Using modern JavaScript frameworks efficiently</li>
+            <li>Minimizing layout recalculations</li>
+          </ul>
+        </section>
+
+        <section class="blog-section">
+          <h2>Cumulative Layout Shift (CLS)</h2>
+          <p>CLS measures visual stability by tracking unexpected layout shifts. A good CLS is 0.1 or less. Prevent layout shifts by:</p>
+          <ul style="color: var(--text-secondary); margin: 1rem 0;">
+            <li>Setting sizes for images and embeds</li>
+            <li>Avoiding inserting content above existing content</li>
+            <li>Using transform animations instead of layout changes</li>
+            <li>Preloading fonts to avoid FOIT/FOUT</li>
+            <li>Testing across different devices and network speeds</li>
+          </ul>
+        </section>
+
+        <section class="blog-section">
+          <h2>Measuring Core Web Vitals</h2>
+          <p>Monitor your Core Web Vitals using Google PageSpeed Insights, Chrome User Experience Report, or Search Console. Test both lab data (synthetic testing) and field data (real user experience).</p>
+          <p>Prioritize fixes based on impact. Focus on the metric that needs the most improvement first.</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Conclusion</h2>
+          <p>Core Web Vitals are increasingly important for SEO and user experience. By measuring and optimizing LCP, INP, and CLS, you'll improve rankings while providing a better experience for your visitors.</p>
+        </section>
+
+        <div class="blog-post-footer">
+          <a class="button button-primary" href="../index.html#blog-section">Back to Blog</a>
+          <a class="button button-secondary" href="../contact.html">Get Expert Help</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column footer-intro">
+        <a class="brand-mark footer-brand" href="../index.html">Jannatul</a>
+        <p>Personal SEO expert support for businesses that want search growth with stronger strategy.</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-title">Quick links</h3>
+        <ul class="footer-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
